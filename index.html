@@ -1,0 +1,677 @@
+<!doctype html>
+<html lang="en">
+   <head>
+      <!-- Required meta tags -->
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+      <!-- Bootstrap CSS -->
+      <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+      <link rel="stylesheet" href="https://use.typekit.net/pyo5unl.css">
+      <link rel="preconnect" href="https://fonts.googleapis.com">
+      <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+      <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+      <title>Purple Chopstix</title>
+   </head>
+    
+    
+   <!-- Navigation Bar -->
+   <nav class="navbar navbar-expand-lg navbar-dark fixed-top" style="background: purple;">
+      <a class="navbar-brand" href="#">
+      <img src="img/logo.svg" width="60" height="60" alt="">
+      </a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+         <ul class="navbar-nav ml-auto justify-content-end">
+            <li class="nav-item active">
+               <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+            </li>
+            <li class="nav-item">
+               <a class="nav-link" href="#menu">Menu</a>
+            </li>
+            <li class="nav-item">
+               <a class="nav-link" href="#reservations">Reservations</a>
+            </li>
+            <li class="nav-item">
+               <a class="nav-link" href="#catering">Catering</a>
+            </li>
+            <li class="nav-item">
+               <a class="nav-link" href="#location">Location</a>
+            </li>
+         </ul>
+      </div>
+   </nav>
+    
+    
+   <!-- Styling -->
+   <style>
+      h1{
+      font-family: viktor-script, sans-serif;
+      font-weight: 400;
+      font-style: normal;
+      font-size: 120px;
+      color: #000;
+      text-align: center;
+      padding-top: 100px;
+      }
+      h2{
+      font-family: 'Roboto', sans-serif;
+      font-weight:900;
+      font-size: 70px;
+      text-align: center;
+      color: #000;
+      }
+      p{
+      font-family: 'Roboto', sans-serif; 
+      }
+      .p-bold{
+      font-family: 'Roboto', sans-serif;
+      font-weight:900;
+      font-size: 25px;
+      }
+      .white{
+      color: #fff;
+      }
+      .black{
+      color: black;
+      }
+      .background{
+      background-image:url("img/background.jpg");
+      min-height: 600px;
+      background-attachment:fixed;
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: cover;
+      }
+      .background2{
+      background-image:url("img/background2.jpg");
+      min-height: 300px;
+      background-attachment:fixed;
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: cover;
+      }
+      .btn-custom{
+      background-color: purple;
+      color: white;
+      }
+      .btn-custom:hover{
+      background-color: white;
+      color: black;
+      }
+      section{
+      padding: 50px;
+      }
+      .hr-black{
+      border: 2px solid black;
+      width: 200px;
+      border-radius: 2px;
+      }
+      .hr-white{
+      border: 2px solid white;
+      width: 200px;
+      border-radius: 2px;
+      }
+      .hr-heading{
+      border: 2px solid purple;
+      width: 200px;
+      border-radius: 2px;
+      }
+      .nav-pills .nav-pills-custom .nav-link:not(.active) {
+      background-color: transparent;
+      color: black;
+      }
+      .nav-pills .nav-pills-custom .nav-link{
+      background-color: purple;
+      color: white;
+      }
+      .catering-menu{
+      color: purple;
+      }
+      .catering-menu:hover{
+      color: purple;
+      text-decoration: underline;
+      }
+   </style>
+    
+    
+   <body>
+       
+       
+      <!--Jumbotron & Call to Action -->
+      <div class="background">
+         <div class="px-4 py-5 my-5 text-center">
+            <h1 class="white">Purple Chopstix</h1>
+            <div class="col-lg-6 mx-auto">
+               <div class="d-grid gap-6 d-sm-flex justify-content-sm-center">
+                  <a href="#menu"><button type="button" class="btn btn-custom btn-lg px-4 gap-6 black mr-2 mt-md-5">Menu Items</button></a>
+                  <a href="#reservations"><button type="button" class="btn btn-custom btn-lg px-4 ml-2 mt-md-5">Reservations</button></a>
+               </div>
+            </div>
+         </div>
+      </div>
+       
+       
+      <!--Menu Section-->
+      <section class="bg-light" id="menu">
+         <h2 class="">Menu</h2>
+         <hr class="hr-heading">
+         <ul class="nav nav-pills mb-3 pt-md-5" id="pills-tab" role="tablist">
+            <li class="nav-item nav-pills-custom active">
+               <a class="nav-link" id="pills-apps-tab" data-toggle="pill" href="#pills-apps" role="tab" aria-controls="pills-apps" aria-selected="true">Appetizers</a>
+            </li>
+            <li class="nav-item nav-pills-custom">
+               <a class="nav-link" id="pills-alacarte-tab" data-toggle="pill" href="#pills-alacarte" role="tab" aria-controls="pills-alacarte" aria-selected="false">A La Carte</a>
+            </li>
+            <li class="nav-item nav-pills-custom">
+               <a class="nav-link" id="pills-curry-tab" data-toggle="pill" href="#pills-curry" role="tab" aria-controls="pills-curry" aria-selected="false">Curry</a>
+            </li>
+            <li class="nav-item nav-pills-custom">
+               <a class="nav-link" id="pills-pastas-tab" data-toggle="pill" href="#pills-pastas" role="tab" aria-controls="pills-pastas" aria-selected="false">Pastas</a>
+            </li>
+            <li class="nav-item nav-pills-custom">
+               <a class="nav-link" id="pills-special-tab" data-toggle="pill" href="#pills-special" role="tab" aria-controls="pills-special" aria-selected="false">House Specialties</a>
+            </li>
+            <li class="nav-item nav-pills-custom">
+               <a class="nav-link" id="pills-beverages-tab" data-toggle="pill" href="#pills-beverages" role="tab" aria-controls="pills-beverages" aria-selected="false">Beverages</a>
+            </li>
+         </ul>
+         <div class="tab-content" id="pills-tabContent">
+             
+             
+            <!--Appetizers-->
+            <div class="tab-pane fade show active" id="pills-apps" role="tabpanel" aria-labelledby="pills-apps-tab">
+               <div class="container">
+                  <div class="row">
+                     <div class="card-deck col-lg-4 pt-4">
+                        <div class="card">
+                           <img src="img/Appetizer1.jpg" class="card-img-top" alt="...">
+                           <div class="card-body">
+                              <h5 class="card-title">Greek Pizza</h5>
+                              <p class="text-muted">$10</p>
+                              <p class="card-text">Creamy pesto spread on warm flatbread, toppd with kalamata tapenade, fresh tomatoes, and feta cheese.</p>
+                           </div>
+                        </div>
+                     </div>
+                     <div class="card-deck col-lg-4 pt-4">
+                        <div class="card">
+                           <img src="img/Appetizer2.jpg" class="card-img-top" alt="...">
+                           <div class="card-body">
+                              <h5 class="card-title">Nori Sushi Roll</h5>
+                              <p class="text-muted">$9</p>
+                              <p class="card-text">Scallion, daikon radish, carrot, and red pepper make this vegan delicacy a tasty treat. With wasabi, pickled ginger, and soy sauce.</p>
+                           </div>
+                        </div>
+                     </div>
+                     <div class="card-deck col-lg-4 pt-4">
+                        <div class="card">
+                           <img src="img/Appetizer3.jpg" class="card-img-top" alt="...">
+                           <div class="card-body">
+                              <h5 class="card-title">Crostini Bread</h5>
+                              <p class="text-muted">$8</p>
+                              <p class="card-text">Toasted slices of French baguette topped with garlic butter, sweet peppers, parsley, and mozzarella.</p>
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+                  <div class="row">
+                     <div class="card-deck col-lg-4 pt-4">
+                        <div class="card">
+                           <img src="img/Appetizer4.jpg" class="card-img-top" alt="...">
+                           <div class="card-body">
+                              <h5 class="card-title">Nachos Grande</h5>
+                              <p class="text-muted">$11</p>
+                              <p class="card-text"> Piled high with peppers, onions, beans, cheese, and green chili. Served with our house salsa and sour cream garnish.</p>
+                           </div>
+                        </div>
+                     </div>
+                     <div class="card-deck col-lg-4 pt-4">
+                        <div class="card">
+                           <img src="img/Appetizer5.jpg" class="card-img-top" alt="...">
+                           <div class="card-body">
+                              <h5 class="card-title">Warm Artichoke Parmesan Dip</h5>
+                              <p class="text-muted">$10</p>
+                              <p class="card-text">Served with pita points and chips.</p>
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+            </div>
+             
+             
+            <!--A La Carte-->
+            <div class="tab-pane fade" id="pills-alacarte" role="tabpanel" aria-labelledby="pills-alacarte-tab">
+               <div class="tab-pane fade show active" id="pills-apps" role="tabpanel" aria-labelledby="pills-apps-tab">
+                  <div class="container">
+                     <div class="row">
+                        <div class="card-deck col-lg-4 pt-4">
+                           <div class="card">
+                              <img src="img/Alacarte1.jpg" class="card-img-top" alt="...">
+                              <div class="card-body">
+                                 <h5 class="card-title">Sesame-Ginger Chicken or Tofu Salad</h5>
+                                 <p class="text-muted">$14</p>
+                                 <p class="card-text">Tender strips of chicken or tofu seared in *Daisy* sauce over a bed of greens with feta and sesame soy dressing.</p>
+                              </div>
+                           </div>
+                        </div>
+                        <div class="card-deck col-lg-4 pt-4">
+                           <div class="card">
+                              <img src="img/Alacarte2.jpg" class="card-img-top" alt="...">
+                              <div class="card-body">
+                                 <h5 class="card-title">House Salad</h5>
+                                 <p class="text-muted">$6</p>
+                                 <p class="card-text">Gourmet greens with carrot, red cabbage, cucumber, and tomato.</p>
+                              </div>
+                           </div>
+                        </div>
+                        <div class="card-deck col-lg-4 pt-4">
+                           <div class="card">
+                              <img src="img/Alacarte3.jpg" class="card-img-top" alt="...">
+                              <div class="card-body">
+                                 <h5 class="card-title">Tom Yum Soup</h5>
+                                 <p class="text-muted">$6</p>
+                                 <p class="card-text">Beans and rice in a spicy Thai coconut broth with scallions and fresh ginger.</p>
+                              </div>
+                           </div>
+                        </div>
+                     </div>
+                     <div class="row pt-4">
+                        <div class="card-deck col-lg-4 pt-4">
+                           <div class="card">
+                              <img src="img/Alacarte4.jpg" class="card-img-top" alt="...">
+                              <div class="card-body">
+                                 <h5 class="card-title">Chips and Salsa</h5>
+                                 <p class="text-muted">$5</p>
+                                 <p class="card-text">Tortilla chips paired with our house salsa and sour cream.</p>
+                              </div>
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+            </div>
+             
+             
+            <!--Curry-->
+            <div class="tab-pane fade" id="pills-curry" role="tabpanel" aria-labelledby="pills-curry-tab">
+               <div class="tab-pane fade show active" id="pills-apps" role="tabpanel" aria-labelledby="pills-apps-tab">
+                  <div class="container">
+                     <p class="mt-5">Simmered with fresh garlic and ginger and served over a bed of jasmine rice.
+                        <br>
+                        <br>
+                        With chicken or tofu $17 or shrimp $19
+                     </p>
+                     <div class="row">
+                        <div class="card-deck col-lg-4 pt-4">
+                           <div class="card">
+                              <img src="img/Curry1.jpg" class="card-img-top" alt="...">
+                              <div class="card-body">
+                                 <h5 class="card-title">Yellow Indian Curry</h5>
+                                 <p class="card-text">A mild blend of sweet spices, garnished with raita.</p>
+                              </div>
+                           </div>
+                        </div>
+                        <div class="card-deck col-lg-4 pt-4">
+                           <div class="card">
+                              <img src="img/Curry2.jpg" class="card-img-top" alt="...">
+                              <div class="card-body">
+                                 <h5 class="card-title">Red Thai Coconut</h5>
+                                 <p class="card-text">This spicy full-bodied curry is a house favorite.</p>
+                              </div>
+                           </div>
+                        </div>
+                        <div class="card-deck col-lg-4 pt-4">
+                           <div class="card">
+                              <img src="img/Curry3.jpg" class="card-img-top" alt="...">
+                              <div class="card-body">
+                                 <h5 class="card-title">Green Thai Coconut</h5>
+                                 <p class="card-text">Considered *extra spicy* with earthy hints of lemongrass.</p>
+                              </div>
+                           </div>
+                        </div>
+                     </div>
+                     <div class="row pt-4">
+                        <div class="card-deck col-lg-4 pt-4">
+                           <div class="card">
+                              <img src="img/Curry4.jpg" class="card-img-top" alt="...">
+                              <div class="card-body">
+                                 <h5 class="card-title">Signature Crepes</h5>
+                                 <p class="text-muted">$5</p>
+                                 <p class="card-text">Two homemade crepess served with jasmine rice and chef's steamed vegetables.
+                                    <br>
+                                    <br>
+                                    With your choice of filling:
+                                 </p>
+                              </div>
+                           </div>
+                        </div>
+                        <div class="card-deck col-lg-4 pt-4">
+                           <div class="card">
+                              <img src="img/Curry5.jpg" class="card-img-top" alt="...">
+                              <div class="card-body">
+                                 <h5 class="card-title">Seafood</h5>
+                                 <p class="text-muted">$21</p>
+                                 <p class="card-text">Blend of baby shrimp and flaked crab with garlic, onions and sweet peppers. Topped with shrimp in sherry cream.</p>
+                              </div>
+                           </div>
+                        </div>
+                        <div class="card-deck col-lg-4 pt-4">
+                           <div class="card">
+                              <img src="img/Curry6.jpg" class="card-img-top" alt="...">
+                              <div class="card-body">
+                                 <h5 class="card-title">Veggie Tofu</h5>
+                                 <p class="text-muted">$18</p>
+                                 <p class="card-text"> A delightful blend of sautéed, marinated tofu and vegetables topped with creamy béchamel.</p>
+                              </div>
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+            </div>
+             
+             
+            <!--Pastas-->
+            <div class="tab-pane fade" id="pills-pastas" role="tabpanel" aria-labelledby="pills-pastas-tab">
+               <div class="container">
+                  <div class="row">
+                     <div class="card-deck col-lg-4 pt-4">
+                        <div class="card">
+                           <img src="img/Pasta1.jpg" class="card-img-top" alt="...">
+                           <div class="card-body">
+                              <h5 class="card-title">Linguine Shrimp and Scallops</h5>
+                              <p class="text-muted">$20</p>
+                              <p class="card-text">With sautéed peppers, onions and cherry tomatoes in a light white wine and garlic sauce.</p>
+                           </div>
+                        </div>
+                     </div>
+                     <div class="card-deck col-lg-4 pt-4">
+                        <div class="card">
+                           <img src="img/Pasta2.jpg" class="card-img-top" alt="...">
+                           <div class="card-body">
+                              <h5 class="card-title">Sweet Potato Peanut Pasta</h5>
+                              <p class="text-muted">$16</p>
+                              <p class="card-text">Sweet potatoes and mixed veggies sauteed in soy sauce and garlic over rice noodles in a luscious peanut sauce.
+                                 <br>
+                                 <br>
+                                 Add chicken or tofu $4 or shrimp $5
+                              </p>
+                           </div>
+                        </div>
+                     </div>
+                     <div class="card-deck col-lg-4 pt-4">
+                        <div class="card">
+                           <img src="img/Pasta3.jpg" class="card-img-top" alt="...">
+                           <div class="card-body">
+                              <h5 class="card-title">Seafood Alfredo</h5>
+                              <p class="text-muted">$20</p>
+                              <p class="card-text">Shrimp and crab in sherry cream with asparagus tips and baby tomatoes. Sprinkled with parmesan and parsley.</p>
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+                  <div class="row">
+                     <div class="card-deck col-lg-4 pt-4">
+                        <div class="card">
+                           <img src="img/Pasta4.jpg" class="card-img-top" alt="...">
+                           <div class="card-body">
+                              <h5 class="card-title">Veggie Pesto Pasta</h5>
+                              <p class="text-muted">$16</p>
+                              <p class="card-text">Sun-dried tomatoes, portabellas, onions, sweet peppers and artichoke hearts tossed with linguine and fresh pesto.
+                                 <br>
+                                 <br>
+                                 Add chicken or tofu $4 or shrimp $5
+                              </p>
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+            </div>
+             
+             
+            <!--House Specialties-->
+            <div class="tab-pane fade" id="pills-special" role="tabpanel" aria-labelledby="pills-special-tab">
+               <div class="container">
+                  <div class="row">
+                     <div class="card-deck col-lg-4 pt-4">
+                        <div class="card">
+                           <img src="img/Special1.jpg" class="card-img-top" alt="...">
+                           <div class="card-body">
+                              <h5 class="card-title">Daisy Stir Fry</h5>
+                              <p class="card-text">Sautéed veggies with baby corn, water chestnuts and snow peas in sweet sesame ginger sauce.
+                                 <br>
+                                 <br>
+                                 With chicken or tofu $17 or shrimp $19
+                              </p>
+                           </div>
+                        </div>
+                     </div>
+                     <div class="card-deck col-lg-4 pt-4">
+                        <div class="card">
+                           <img src="img/Special2.jpg" class="card-img-top" alt="...">
+                           <div class="card-body">
+                              <h5 class="card-title">Bolivian Al Gûsto</h5>
+                              <p class="card-text">Pan-seared veggies in a robust red wine sweet chili sauce with rice and beans.
+                                 <br>
+                                 <br>
+                                 Choose from chicken or tofu $17 or shrimp $19
+                              </p>
+                           </div>
+                        </div>
+                     </div>
+                     <div class="card-deck col-lg-4 pt-4">
+                        <div class="card">
+                           <img src="img/Special3.jpg" class="card-img-top" alt="...">
+                           <div class="card-body">
+                              <h5 class="card-title">Pollo de Taos</h5>
+                              <p class="text-muted">$18</p>
+                              <p class="card-text">Breaded chicken breasts seared in green chili topped with melted cheese. Served with rice, beans, and tortilla chips garnish.</p>
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+            </div>
+             
+             
+            <!--Beverages-->
+            <div class="tab-pane fade" id="pills-beverages" role="tabpanel" aria-labelledby="pills-beverages-tab">
+               <div class="container">
+                  <div class="row">
+                     <div class="card-deck col-lg-4 pt-4">
+                        <div class="card">
+                           <img src="img/Bev1.jpg" class="card-img-top" alt="...">
+                           <div class="card-body">
+                              <h5 class="card-title">Raspberry Juice</h5>
+                              <p class="text-muted">$2</p>
+                           </div>
+                        </div>
+                     </div>
+                     <div class="card-deck col-lg-4 pt-4">
+                        <div class="card">
+                           <img src="img/Bev2.jpg" class="card-img-top" alt="...">
+                           <div class="card-body">
+                              <h5 class="card-title">Mandarin Peach Juice</h5>
+                              <p class="text-muted">$2</p>
+                           </div>
+                        </div>
+                     </div>
+                     <div class="card-deck col-lg-4 pt-4">
+                        <div class="card">
+                           <img src="img/Bev3.jpg" class="card-img-top" alt="...">
+                           <div class="card-body">
+                              <h5 class="card-title">Iced Tea</h5>
+                              <p class="text-muted">$2</p>
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+                  <div class="row">
+                     <div class="card-deck col-lg-4 pt-4">
+                        <div class="card">
+                           <img src="img/Bev4.jpg" class="card-img-top" alt="...">
+                           <div class="card-body">
+                              <h5 class="card-title">Lemonade</h5>
+                              <p class="text-muted">$2</p>
+                           </div>
+                        </div>
+                     </div>
+                     <div class="card-deck col-lg-4 pt-4">
+                        <div class="card">
+                           <img src="img/Bev5.jpg" class="card-img-top" alt="...">
+                           <div class="card-body">
+                              <h5 class="card-title">Hot Tea</h5>
+                              <p class="text-muted">$2</p>
+                           </div>
+                        </div>
+                     </div>
+                     <div class="card-deck col-lg-4 pt-4">
+                        <div class="card">
+                           <img src="img/Bev6.jpg" class="card-img-top" alt="...">
+                           <div class="card-body">
+                              <h5 class="card-title">Coffee</h5>
+                              <p class="text-muted">$2</p>
+                              <p class="card-text">Caffeinated or decaffeinated.</p>
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </section>
+       
+       
+      <!--Reservations Section-->
+      <section class="bg-light background2 pt-lg-5" id="reservations">
+         <div class="container">
+            <h2 class="white pb-md-5">
+               Reservations 
+               <hr class="hr-white">
+            </h2>
+            <form id="contact-form" name="contact-form" action="https://formspree.io/f/xeqvnaan" method="POST">
+               <div class="form-row">
+                  <div class="form-group col-md-4">
+                     <input class="form-control" type="text" id="name" name="name" placeholder="Party Name" required>
+                  </div>
+                  <div class="form-group col-md-4">
+                     <select class="form-control" width="50px" required>
+                        <option>Party Size</option>
+                        <option>1</option>
+                        <option>2</option>
+                        <option>3</option>
+                        <option>4</option>
+                        <option>5</option>
+                        <option>6</option>
+                        <option>7</option>
+                        <option>8</option>
+                        <option>9</option>
+                        <option>10</option>
+                        <option>Larger Party</option>
+                     </select>
+                  </div>
+                  <div class="form-group col-md-4">
+                     <select class="form-control" width="50px" required>
+                        <option>Reserve a Time</option>
+                        <option>5:00</option>
+                        <option>5:15</option>
+                        <option>5:30</option>
+                        <option>5:45</option>
+                        <option>6:00</option>
+                        <option>6:15</option>
+                        <option>6:30</option>
+                        <option>6:45</option>
+                        <option>7:00</option>
+                        <option>7:15</option>
+                        <option>7:30</option>
+                     </select>
+                  </div>
+               </div>
+            </form>
+            <div class="d-grid gap-6 d-sm-flex justify-content-sm-center mt-5">
+               <button type="button" class="btn btn-custom btn-md px-4 gap-6" onclick="document.getElementById('contact-form').submit();">Submit</button>
+            </div>
+         </div>
+      </section>
+       
+       
+      <!--Catering Section-->
+      <section id="catering">
+         <h2 class="pb-md-5">
+            Catering 
+            <hr class="hr-heading">
+         </h2>
+         <div class="container">
+            <div class="row">
+               <div class="col-lg-6">
+                  <p><span class="p-bold">Taste that Travels!</span>
+                     <br>
+                     <br>Purple Chopstix also offers catering and private parties. Choose from a wide variety of appetizers and entrees.
+                     <br>
+                     <br><a class="catering-menu" href="img/catering-menu.pdf">Catering Menu</a>
+                     <br>
+                     <br>Call for details. (740) 592-4798
+                  </p>
+               </div>
+               <div class="col-lg-6">
+                  <img class="img-fluid" src="img/catering1.jpg">
+               </div>
+            </div>
+         </div>
+      </section>
+       
+       
+      <!--Location-->
+      <section id="location">
+         <h2 class="pb-md-5">
+            Location 
+            <hr class="hr-heading">
+         </h2>
+         <div class="container">
+            <div class="row">
+               <div class="col-lg-6">
+                  <p><span class="p-bold">Stop on By!</span>
+                     <br>
+                     <br>Purple Chopstix is Located at 371 Richland Avenue Athens, OH. <br>We love to see you stop by!
+                     <br>
+                     <br>
+                     <span class="p-bold" style="font-size: 20px;">Hours</span><br>
+                     Monday:	    Closed<br>
+                     Tuesday:	Closed<br>
+                     Wednesday:	5–8PM<br>
+                     Thursday:	5–8PM<br>
+                     Friday:	    5–8:30PM<br>
+                     Saturday:	5–8:30PM<br>
+                     Sunday:     11AM–1PM<br>
+                     <br><img src="img/phone.svg" class="phone" width="20px"><span class="ml-3">(740) 592-4798</span>
+                  </p>
+               </div>
+               <div class="col-lg-6">
+                  <img class="img-fluid" src="img/location1.jpg">
+               </div>
+            </div>
+         </div>
+      </section>
+       
+       
+      <!--Footer-->
+      <footer class="pt-5 pb-5" style="background-color: #000">
+         <p class="white text-center">© 2021 Purple Chopstix | 371 Richland Avenue | Athens, OH 45701 | (740) 592-4798
+            <br>
+            <br>
+            <a href="https://www.facebook.com/purplechopstix/"><img src="img/facebook.svg" width="25px"></a>
+            <a href="https://www.instagram.com/purplechopstix/"><img src="img/instagram.svg" width="25px"></a>
+         </p>
+      </footer>
+       
+       
+      <!-- Optional JavaScript -->
+      <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+      <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+      <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+   </body>
+</html>
